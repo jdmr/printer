@@ -1,0 +1,62 @@
+
+04/12 15:52:33: Launching 'app' on Google Pixel 4a (5G).
+Install successfully finished in 1 s 727 ms.
+$ adb shell am start -n "com.StarMicronics.StarIOSDK/com.starmicronics.starprntsdk.TitleActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Connected to process 4017 on device 'google-pixel_4a__5g_-0B031JECB13317'.
+Capturing and displaying logcat messages from application. This behavior can be disabled in the "Logcat output" section of the "Debugger" settings page.
+I/onics.StarIOSDK: Late-enabling -Xcheck:jni
+I/onics.StarIOSDK: Using CollectorTypeCC GC.
+D/CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10059; state: ENABLED
+W/ziparchive: Unable to open '/data/app/~~u6gyBf1vWK5q6OXEM0XVPQ==/com.StarMicronics.StarIOSDK-jvOj7vqaOqAlX7-sBOncbg==/base.dm': No such file or directory
+W/ziparchive: Unable to open '/data/app/~~u6gyBf1vWK5q6OXEM0XVPQ==/com.StarMicronics.StarIOSDK-jvOj7vqaOqAlX7-sBOncbg==/base.dm': No such file or directory
+D/nativeloader: Configuring classloader-namespace for other apk /data/app/~~u6gyBf1vWK5q6OXEM0XVPQ==/com.StarMicronics.StarIOSDK-jvOj7vqaOqAlX7-sBOncbg==/base.apk. target_sdk_version=31, uses_libraries=, library_path=/data/app/~~u6gyBf1vWK5q6OXEM0XVPQ==/com.StarMicronics.StarIOSDK-jvOj7vqaOqAlX7-sBOncbg==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/com.StarMicronics.StarIOSDK
+V/GraphicsEnvironment: ANGLE Developer option for 'com.StarMicronics.StarIOSDK' set to: 'default'
+V/GraphicsEnvironment: ANGLE GameManagerService for com.StarMicronics.StarIOSDK: false
+V/GraphicsEnvironment: Updatable production driver is not supported on the device.
+D/NetworkSecurityConfig: No Network Security Config specified, using platform default
+D/NetworkSecurityConfig: No Network Security Config specified, using platform default
+W/onics.StarIOSDK: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+W/onics.StarIOSDK: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+W/AdrenoUtils: <ReadGpuID_from_sysfs:197>: Failed to open /sys/class/kgsl/kgsl-3d0/gpu_model
+W/AdrenoUtils: <ReadGpuID:221>: Failed to read chip ID from gpu_model. Fallback to use the GSL path
+D/CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10059; state: DISABLED
+D/CompatibilityChangeReporter: Compat change id reported: 37756858; UID 10059; state: ENABLED
+D/CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10059; state: ENABLED
+I/AdrenoGLES-0: QUALCOMM build                   : 4783c89, I46ff5fc46f
+    Build Date                       : 11/30/20
+    OpenGL ES Shader Compiler Version: EV031.31.04.01
+    Local Branch                     : QPR2
+    Remote Branch                    : 
+    Remote Branch                    : 
+    Reconstruct Branch               : 
+I/AdrenoGLES-0: Build Config                     : S P 10.0.4 AArch64
+I/AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+I/AdrenoGLES-0: PFP: 0x016dd093, ME: 0x00000000
+E/OpenGLRenderer: Unable to match the desired swap behavior.
+W/Parcel: Expecting binder but got null!
+E/OpenGLRenderer: Unable to match the desired swap behavior.
+W/Parcel: Expecting binder but got null!
+I/onics.StarIOSDK: Compiler allocated 4413KB to compile void android.view.ViewRootImpl.performTraversals()
+I/onics.StarIOSDK: Compiler allocated 4413KB to compile void android.view.ViewRootImpl.performTraversals()
+D/OpenGLRenderer: endAllActiveAnimators on 0xb4000075dea69280 (AlertController$RecycleListView) with handle 0xb4000074eeab0940
+E/OpenGLRenderer: Unable to match the desired swap behavior.
+W/Parcel: Expecting binder but got null!
+I/System.out: portName: BT:00:11:62:2E:65:1F | settings | timeout: 10000
+E/OpenGLRenderer: Unable to match the desired swap behavior.
+W/Parcel: Expecting binder but got null!
+I/System.out: begin check block
+I/System.out: Writing to printer
+I/System.out: [B@bfcc440
+I/System.out: set end checked block for: 30000
+I/System.out: end checked block
+I/System.out: checking status
+I/System.out: releasing port
+D/BluetoothSocket: close() this: XX:XX:XX:2E:65:1F, channel: 1, mSocketIS: android.net.LocalSocketImpl$SocketInputStream@7eb3f79, mSocketOS: android.net.LocalSocketImpl$SocketOutputStream@d1714be, mSocket: android.net.LocalSocket@419e91f impl:android.net.LocalSocketImpl@109e46c fd:java.io.FileDescriptor@c575a35, mSocketState: CONNECTED
+D/BluetoothSocket: close() this: XX:XX:XX:2E:65:1F, channel: 1, mSocketIS: android.net.LocalSocketImpl$SocketInputStream@7eb3f79, mSocketOS: android.net.LocalSocketImpl$SocketOutputStream@d1714be, mSocket: null, mSocketState: CLOSED
+D/BluetoothSocket: close() this: XX:XX:XX:2E:65:1F, channel: 1, mSocketIS: android.net.LocalSocketImpl$SocketInputStream@7eb3f79, mSocketOS: android.net.LocalSocketImpl$SocketOutputStream@d1714be, mSocket: null, mSocketState: CLOSED
+I/System.out: done
+E/OpenGLRenderer: Unable to match the desired swap behavior.
+W/Parcel: Expecting binder but got null!
+W/onics.StarIOSDK: Cleared Reference was only reachable from finalizer (only reported once)
+D/BluetoothSocket: close() this: XX:XX:XX:2E:65:1F, channel: 1, mSocketIS: android.net.LocalSocketImpl$SocketInputStream@7eb3f79, mSocketOS: android.net.LocalSocketImpl$SocketOutputStream@d1714be, mSocket: null, mSocketState: CLOSED
+D/OpenGLRenderer: endAllActiveAnimators on 0xb4000075deb01a50 (RippleDrawable) with handle 0xb4000074eeab3100

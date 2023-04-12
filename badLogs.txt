@@ -1,0 +1,77 @@
+
+04/12 15:54:17: Launching 'app' on Google Pixel 4a (5G).
+Install successfully finished in 564 ms.
+$ adb shell am start -n "com.example.printer/com.example.printer.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Connected to process 5326 on device 'google-pixel_4a__5g_-0B031JECB13317'.
+Capturing and displaying logcat messages from application. This behavior can be disabled in the "Logcat output" section of the "Debugger" settings page.
+I/example.printer: Late-enabling -Xcheck:jni
+I/example.printer: Using CollectorTypeCC GC.
+V/studio.deploy: Startup agent attached to VM
+V/studio.deploy: No existing instrumentation found. Loading instrumentation from instruments-2ca9b3e0.jar
+W/example.printer: DexFile /data/data/com.example.printer/code_cache/.studio/instruments-2ca9b3e0.jar is in boot class path but is not in a known location
+V/studio.deploy: ModifyParameterTransform failed: Landroid/app/ApplicationLoaders;
+W/example.printer: Current dex file has more than one class in it. Calling RetransformClasses on this class might fail if no transformations are applied to it!
+W/example.printer: Current dex file has more than one class in it. Calling RetransformClasses on this class might fail if no transformations are applied to it!
+W/example.printer: Redefining intrinsic method java.lang.Thread java.lang.Thread.currentThread(). This may cause the unexpected use of the original definition of java.lang.Thread java.lang.Thread.currentThread()in methods that have already been compiled.
+W/example.printer: Redefining intrinsic method boolean java.lang.Thread.interrupted(). This may cause the unexpected use of the original definition of boolean java.lang.Thread.interrupted()in methods that have already been compiled.
+W/example.printer: Current dex file has more than one class in it. Calling RetransformClasses on this class might fail if no transformations are applied to it!
+W/example.printer: Current dex file has more than one class in it. Calling RetransformClasses on this class might fail if no transformations are applied to it!
+W/example.printer: Current dex file has more than one class in it. Calling RetransformClasses on this class might fail if no transformations are applied to it!
+D/CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10068; state: ENABLED
+W/ziparchive: Unable to open '/data/app/~~nVa_T9i5WMWCwER4UHNS6w==/com.example.printer-BMjuAz1Cng4Lf-MOtSB8qA==/base.dm': No such file or directory
+W/ziparchive: Unable to open '/data/app/~~nVa_T9i5WMWCwER4UHNS6w==/com.example.printer-BMjuAz1Cng4Lf-MOtSB8qA==/base.dm': No such file or directory
+D/nativeloader: Configuring classloader-namespace for other apk /data/app/~~nVa_T9i5WMWCwER4UHNS6w==/com.example.printer-BMjuAz1Cng4Lf-MOtSB8qA==/base.apk. target_sdk_version=33, uses_libraries=, library_path=/data/app/~~nVa_T9i5WMWCwER4UHNS6w==/com.example.printer-BMjuAz1Cng4Lf-MOtSB8qA==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.printer
+V/GraphicsEnvironment: ANGLE Developer option for 'com.example.printer' set to: 'default'
+V/GraphicsEnvironment: ANGLE GameManagerService for com.example.printer: false
+V/GraphicsEnvironment: Updatable production driver is not supported on the device.
+D/NetworkSecurityConfig: No Network Security Config specified, using platform default
+D/NetworkSecurityConfig: No Network Security Config specified, using platform default
+D/AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+D/CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10068; state: ENABLED
+W/example.printer: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+W/example.printer: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+I/AdrenoGLES-0: QUALCOMM build                   : 4783c89, I46ff5fc46f
+    Build Date                       : 11/30/20
+    OpenGL ES Shader Compiler Version: EV031.31.04.01
+    Local Branch                     : QPR2
+    Remote Branch                    : 
+    Remote Branch                    : 
+    Reconstruct Branch               : 
+I/AdrenoGLES-0: Build Config                     : S P 10.0.4 AArch64
+I/AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+I/AdrenoGLES-0: PFP: 0x016dd093, ME: 0x00000000
+W/AdrenoUtils: <ReadGpuID_from_sysfs:197>: Failed to open /sys/class/kgsl/kgsl-3d0/gpu_model
+W/AdrenoUtils: <ReadGpuID:221>: Failed to read chip ID from gpu_model. Fallback to use the GSL path
+E/OpenGLRenderer: Unable to match the desired swap behavior.
+W/Parcel: Expecting binder but got null!
+I/System.out: Getting port: BT:00:11:62:2E:65:1F
+I/System.out: begin checked block
+I/System.out: printing: [B@4298d39
+I/System.out: Waiting 30 seconds to check end block
+I/System.out: end checked block
+I/example.printer: Thread[6,tid=5332,WaitingInMainSignalCatcherLoop,Thread*=0xb40000763ea5e200,peer=0x12c80260,"Signal Catcher"]: reacting to signal 3
+I/example.printer: 
+I/example.printer: Wrote stack traces to tombstoned
+W/System.err: com.starmicronics.stario.StarIOPortException: There was no response of the device within the timeout period.
+W/System.err:     at com.starmicronics.stario.b.endCheckedBlock(Unknown Source:260)
+W/System.err:     at com.example.printer.MainActivity$1.onClick(MainActivity.java:159)
+W/System.err:     at android.view.View.performClick(View.java:7506)
+W/System.err:     at android.view.View.performClickInternal(View.java:7483)
+W/System.err:     at android.view.View.-$$Nest$mperformClickInternal(Unknown Source:0)
+W/System.err:     at android.view.View$PerformClick.run(View.java:29357)
+W/System.err:     at android.os.Handler.handleCallback(Handler.java:942)
+W/System.err:     at android.os.Handler.dispatchMessage(Handler.java:99)
+W/System.err:     at android.os.Looper.loopOnce(Looper.java:201)
+W/System.err:     at android.os.Looper.loop(Looper.java:288)
+W/System.err:     at android.app.ActivityThread.main(ActivityThread.java:7884)
+W/System.err:     at java.lang.reflect.Method.invoke(Native Method)
+W/System.err:     at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+W/System.err:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+I/System.out: releasing port
+D/BluetoothSocket: close() this: XX:XX:XX:2E:65:1F, channel: 1, mSocketIS: android.net.LocalSocketImpl$SocketInputStream@583d7fb, mSocketOS: android.net.LocalSocketImpl$SocketOutputStream@c13a018, mSocket: android.net.LocalSocket@9b2aa71 impl:android.net.LocalSocketImpl@5673056 fd:java.io.FileDescriptor@62df8d7, mSocketState: CONNECTED
+D/BluetoothSocket: close() this: XX:XX:XX:2E:65:1F, channel: 1, mSocketIS: android.net.LocalSocketImpl$SocketInputStream@583d7fb, mSocketOS: android.net.LocalSocketImpl$SocketOutputStream@c13a018, mSocket: null, mSocketState: CLOSED
+D/BluetoothSocket: close() this: XX:XX:XX:2E:65:1F, channel: 1, mSocketIS: android.net.LocalSocketImpl$SocketInputStream@583d7fb, mSocketOS: android.net.LocalSocketImpl$SocketOutputStream@c13a018, mSocket: null, mSocketState: CLOSED
+I/Choreographer: Skipped 763 frames!  The application may be doing too much work on its main thread.
+D/CompatibilityChangeReporter: Compat change id reported: 78294732; UID 10068; state: ENABLED
+I/OpenGLRenderer: Davey! duration=12774ms; Flags=0, FrameTimelineVsyncId=74332714, IntendedVsync=212534510928402, Vsync=212547258592961, InputEventId=0, HandleInputStart=212547275175118, AnimationStart=212547275187045, PerformTraversalsStart=212547276120587, DrawStart=212547276783712, FrameDeadline=212534531428402, FrameInterval=212547274934493, FrameStartTime=16718765, SyncQueued=212547277468452, SyncStart=212547277969389, IssueDrawCommandsStart=212547278032514, SwapBuffers=212547278808556, FrameCompleted=212547285663921, DequeueBufferDuration=14583, QueueBufferDuration=253489, GpuCompleted=212547285663921, SwapBuffersCompleted=212547279407410, DisplayPresentTime=212539537943254, CommandSubmissionCompleted=212547278808556, 
+I/example.printer: Compiler allocated 4413KB to compile void android.view.ViewRootImpl.performTraversals()
