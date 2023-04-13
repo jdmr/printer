@@ -29,11 +29,14 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.printer.databinding.ActivityMainBinding;
 import com.google.android.material.snackbar.Snackbar;
+import com.starmicronics.stario.PortInfo;
 import com.starmicronics.stario.StarIOPort;
 import com.starmicronics.stario.StarIOPortException;
 import com.starmicronics.stario.StarPrinterStatus;
 import com.starmicronics.starioextension.ICommandBuilder;
 import com.starmicronics.starioextension.StarIoExt;
+
+import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -68,10 +71,6 @@ public class MainActivity extends AppCompatActivity {
                             1000
                     );
                 }
-                StarIOPort port = null;
-                String portName = "BT:00:11:62:2E:65:1F";
-                String portSettings = "";
-
                 String textToPrint =
                         "        Star Clothing Boutique\n" +
                                 "             123 Star Road\n" +
@@ -124,15 +123,24 @@ public class MainActivity extends AppCompatActivity {
                 canvas.translate(0, 0);
                 staticLayout.draw(canvas);
 
-                ICommandBuilder builder = StarIoExt.createCommandBuilder(StarIoExt.Emulation.StarPRNT);
+                ICommandBuilder builder = StarIoExt.createCommandBuilder(StarIoExt.Emulation.StarGraphic);
                 builder.beginDocument();
                 builder.appendBitmap(bitmap, false);
                 builder.appendCutPaper(ICommandBuilder.CutPaperAction.PartialCutWithFeed);
                 builder.endDocument();
                 byte[] commands = builder.getCommands();
 
+                List<PortInfo> mPortList;
+                StarIOPort port = null;
+//                String portName;
+                String portName = "BT:00:11:62:2E:65:1F";
+//                String portName = "BT:Star Micronics";
+                String portSettings = "";
+
                 try
                 {
+//                    mPortList = StarIOPort.searchPrinter("BT:", MainActivity.this);
+//                    portName = "BT:"+mPortList.get(0).getMacAddress();
                     System.out.println("Getting port: " + portName);
                     port = StarIOPort.getPort(portName, portSettings, 10000, MainActivity.this);
 
