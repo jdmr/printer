@@ -132,15 +132,22 @@ public class MainActivity extends AppCompatActivity {
 
                 List<PortInfo> mPortList;
                 StarIOPort port = null;
-//                String portName;
-                String portName = "BT:00:11:62:2E:65:1F";
+                String portName;
+//                String portName = "BT:00:11:62:2E:65:1F";
 //                String portName = "BT:Star Micronics";
                 String portSettings = "";
 
                 try
                 {
-//                    mPortList = StarIOPort.searchPrinter("BT:", MainActivity.this);
-//                    portName = "BT:"+mPortList.get(0).getMacAddress();
+                    mPortList = StarIOPort.searchPrinter("BT:", MainActivity.this);
+                    PortInfo portInfo = mPortList.get(0);
+                    System.out.println("######## PORTINFO");
+                    System.out.println("MAC:"+ portInfo.getMacAddress());
+                    System.out.println("PortName:" + portInfo.getPortName());
+                    System.out.println("ModelName:"+ portInfo.getModelName());
+                    System.out.println("USB:"+portInfo.getUSBSerialNumber());
+                    System.out.println("###################");
+                    portName = "BT:"+portInfo.getMacAddress();
                     System.out.println("Getting port: " + portName);
                     port = StarIOPort.getPort(portName, portSettings, 10000, MainActivity.this);
 
